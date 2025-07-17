@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(45deg, #fff, #333);
+  gap: 0.5rem;
+}
+
+input {
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  text-align: center;
+  border: 1px solid #444;
+  font-weight: bold;
+  font-family: sans-serif;
+  background-color: rgb(150, 150, 219)
+}
+
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  border: 2px solid #000;
+  box-shadow: 
+    4px 4px 4px rgba(0,0,0,0.6),
+    -4px -4px 4px rgba(0,0,0,0.6)
+}
+
+.buttons {
+  display: flex;
+  gap: 15rem;
+}
+
+input:nth-child(1),
+input:nth-child(2),
+input:nth-child(3),
+input:nth-child(10),
+input:nth-child(11),
+input:nth-child(12),
+input:nth-child(19),
+input:nth-child(20),
+input:nth-child(21)
+{
+  background-color: lightblue;
+}
+
+input:nth-child(7),
+input:nth-child(8),
+input:nth-child(9),
+input:nth-child(16),
+input:nth-child(17),
+input:nth-child(18),
+input:nth-child(25),
+input:nth-child(26),
+input:nth-child(27) {
+  background-color: lightblue;
+}
+
+input:nth-child(31),
+input:nth-child(32),
+input:nth-child(33),
+input:nth-child(40),
+input:nth-child(41),
+input:nth-child(42),
+input:nth-child(49),
+input:nth-child(50),
+input:nth-child(51){
+  background-color: lightblue;
+}
+
+input:nth-child(55),
+input:nth-child(56),
+input:nth-child(57),
+input:nth-child(64),
+input:nth-child(65),
+input:nth-child(66),
+input:nth-child(73),
+input:nth-child(74),
+input:nth-child(75) {
+  background-color: lightblue;
+}
+
+input:nth-child(61),
+input:nth-child(62),
+input:nth-child(63),
+input:nth-child(70),
+input:nth-child(71),
+input:nth-child(72),
+input:nth-child(79),
+input:nth-child(80),
+input:nth-child(81) {
+  background-color: lightblue;
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+  padding: 0.2rem 1.5rem;
+  font-size: 1rem;
+  font-family: sans-serif;
+  box-shadow: 5px 4px 3px rgba(0,0,0,0.7);
+}
+
+@media(max-width: 750px) {
+  input {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    font-weight: normal;
+  }
+  
+  .buttons {
+    gap: 2rem;
+  }
+}
